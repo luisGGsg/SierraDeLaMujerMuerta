@@ -16,42 +16,42 @@ public class contrato {
 	}
 
 	public static void main(String[] args) {
-		
-			Scanner t = new Scanner(System.in) ;
-			int opcion;
-			contrato c=null;
-			do {
-				System.out.println("Menú");
-				System.out.println("1. Introduceir datos de un nuevo contrato");
-				System.out.println("2. Ver contrato");
-				System.out.println("0. Salir");
+		System.out.println("KLk maniiinnsss");
+		Scanner t = new Scanner(System.in);
+		int opcion;
+		contrato c = null;
+		do {
+			System.out.println("Menú");
+			System.out.println("1. Introduceir datos de un nuevo contrato");
+			System.out.println("2. Ver contrato");
+			System.out.println("0. Salir");
 
-				opcion = t.nextInt();
+			opcion = t.nextInt();
 
-				switch (opcion) {
-				case 1:
-					c= new contrato();
-					c.vivienda.leer_datos(t);
-					c.vivienda.direccion.leer_datos(t);
-					System.out.println("Datos del arrendador");
-					c.arrendador.leer_datos(t);
-					System.out.println("Datos del arrendatario");
-					c.arrendatario.leer_datos(t);
-					System.out.println("Dime el importe");
-					c.importe=t.nextFloat();
-					break;
-				case 2:
-				
-					c.arrendador.mostrar_datos();
-					c.arrendatario.mostrar_datos();
-					
-				case 0:
-					
-					break;
-				default:
-					System.out.println("Gracias por usarlo");
+			switch (opcion) {
+			case 1:
+				c = new contrato();
+				c.vivienda.leer_datos(t);
+				c.vivienda.direccion.leer_datos(t);
+				System.out.println("Datos del arrendador");
+				c.arrendador.leer_datos(t);
+				System.out.println("Datos del arrendatario");
+				c.arrendatario.leer_datos(t);
+				System.out.println("Dime el importe");
+				c.importe = t.nextFloat();
+				break;
+			case 2:
 
-				}
-			} while (opcion != 0);
-		}
+				c.arrendador.mostrar_datos();
+				c.arrendatario.mostrar_datos();
+
+			case 0:
+
+				break;
+			default:
+				System.out.println("Gracias por usarlo");
+
+			}
+		} while (opcion != 0);
 	}
+}
